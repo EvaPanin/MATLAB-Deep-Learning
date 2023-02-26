@@ -1,5 +1,5 @@
 # MATLAB-Deep-Learning
-Mirrored digit classification
+Mirrored digit classification (READ IN RAW)
 
 
 % Author: Eva Panin, Northeastern University
