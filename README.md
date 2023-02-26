@@ -1,6 +1,5 @@
 # MATLAB-Deep-Learning
 Mirrored digit classification
-
 % Author: Eva Panin, Northeastern University
 % REQUIRES DEEP LEARNING TOOLBOX
 % The handwritten digits images from MATLAB Deep Lerning (DL) toolbox are
