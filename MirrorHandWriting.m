@@ -5,7 +5,7 @@ function MirrorHandWriting
 % utilized.
 % These images were originally cropped and centered, reducing the solution
 % space.
-% The calssification (identification) of images can be done with a relatively
+% The classification (identification) of images can be done with a relatively
 % simple network, as demonstrated in MATLAB DL tool examples.
 % The program shows that there is tremendeous bias in data with respect to
 % mirrored writting.
@@ -52,8 +52,8 @@ delete(findall(groot,'Type','figure'));
 
 PAUSEDURATION=5;
 
-fprintf(['This program explores MATLAB hand-written labeled digits images 0-9, 500 instanses of each \n', ...
-    'The images were originally carefully cropped and centered, reducing solution space. Nevertless, each digit cappeared to be rotated, representing natural writing habbits \n']);
+fprintf(['This program explores MATLAB hand-written labeled digits images 0-9, 500 instances of each \n', ...
+    'The images were originally carefully cropped and centered, reducing solution space. Nevertheless, each digit appeared to be rotated, representing natural writing habbits \n']);
 fprintf('The first task is to show that the simple Deep Learning network can succesfully learn digits, what is prediction of digit label for given image \n');
 
 % Load digit images using MATLAB provided load function
@@ -89,7 +89,7 @@ drawnow;
 pause(PAUSEDURATION);
 close(1);
 
-fprintf('100 images of digit 3 served as test images. Train network on the rest of images. Lets network identify labels of these test images \n');
+fprintf('100 images of digit 3 served as test images. Train network on the rest of images. Let network identify labels of these test images \n');
 %Define indices of images for digit 3
 D3I=Labels=='3';
 %Index of first Ntest images of 3
@@ -148,7 +148,7 @@ pause(PAUSEDURATION);
 close(1);
 
 
-fprintf('Now mirror images of certain digit serves as a test images. Train network is trained on all original images. Network will try to predict label of mirror images \n');
+fprintf('Now mirror images of certain digits serve as test images. Train network is trained on all original images. Network will try to predict label of mirror images \n');
 
 % Create classification network according to MATLAB receipe
 layers = [ ...
@@ -228,7 +228,7 @@ fprintf('Network can not identify mirror 3 and 5 at all. \n');
 fprintf('For example, mirror 3 was identified as 8, 2 or 6. \n');
 fprintf('Therefore, there is significant data set bias w.r.t. mirror handwriting. \n')
 fprintf('One can attempt to remove bias in data by creating (simulating) larger data space. This is achieved through data augmentation by significant rotation and image reflection. \n');
-fprintf('Not shown here explicitly, but image rotation along will improve clasification of mirror 3 but not mirror 5 \n');
+fprintf('Not shown here explicitly, but image rotation alone will improve clasification of mirror 3 but not mirror 5 \n');
 
 pause(PAUSEDURATION);
 close(1);
