@@ -1,5 +1,6 @@
 # MATLAB-Deep-Learning
 Mirrored digit classification (READ IN RAW)
+(Added 2nd rendition of MATLAB to fix typos [not in the code itself -- in the comments] because I made this program at 3 A.M, and I like grammar.)
 
 
 % Author: Eva Panin, Northeastern University
